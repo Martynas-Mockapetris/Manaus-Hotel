@@ -1,0 +1,81 @@
+/* Unmodifiable CSS */
+
+#root {
+  overflow: hidden;
+}
+
+.navbar ul li a:hover {
+  box-shadow: 0 0 15px 5px #50c5578c;
+}
+
+.form input {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.tns-outer {
+  position: relative;
+}
+
+.tns-item {
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+.tns-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tns-controls button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #50c557;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.tns-controls button:first-child {
+  left: -50px;
+}
+
+.tns-controls button:last-child {
+  right: -50px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  color: #50c557 !important;
+  font-size: 30px !important;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute !important;
+  top: 480px !important;
+  left: -100px !important;
+  font-size: 30px !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.slick-next {
+  left: -50px !important;
+}
+
+@media (max-width: 600px) {
+  .slick-prev,
+  .slick-next {
+    top: 550px !important;
+    left: 30% !important;
+  }
+
+  .slick-next {
+    left: 60% !important;
+  }
+}
